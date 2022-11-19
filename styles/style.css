@@ -10,14 +10,15 @@ body{
     border: 1px solid grey;
     background-color: white;
     justify-content: center;
+    margin: auto;
 }
-.screen{
+#screen{
     grid-column: 1 / -1;
     background-color: white;
 }
-button:hover{
+/* .btn:hover{
     background-color: blue;
-}
+} */
 .cancel:hover{
     color: red;
 }

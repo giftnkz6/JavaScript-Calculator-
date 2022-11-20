@@ -1,22 +1,21 @@
-let buttons = document.querySelectorAll(".btn");
+let buttons = document.getElementById("btn");
 let screen = document.getElementById("screen");
 
-// buttons.addEventListener('click', () => {
-//     alert("Hello Hi");
-// });
-for(let i = 0; i < buttons.length; i++){
-    buttons[i].addEventListener("click", function(e) {
+
+// for(let i = 0; i < buttons.length; i++){
+    buttons.addEventListener("click", function(e) {
         // alert("Ngamandla");
-        let display = document.getElementsByClassName("btn").textContent;
+        let display = document.getElementById("btn").innerText;
     
-        screen.innerHTML += display;
+        screen.value += display;
+        
         
 
 
 
     });
 
-}
+// }
 // function clicked() {
 //     alert("Hello Hi");
 // }

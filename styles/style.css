@@ -27,7 +27,7 @@ button:hover{
 }
 #screen{
     grid-column: 1 / -1;
-    background-color: purple;
+    background-color: lightblue;
 }
 /* .btn:hover{
     background-color: blue;

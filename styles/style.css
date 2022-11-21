@@ -6,7 +6,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 200px;
+    width: 150px;
     height: 200px;
     border: 0px solid black;
     background-color: white;
@@ -17,10 +17,17 @@ body{
 #equal{
     grid-column: 2/ -1;
 }
-
+button{
+    background-color: black;
+    color: white;
+}
+button:hover{
+    background-color: aqua;
+    color: black;
+}
 #screen{
     grid-column: 1 / -1;
-    background-color: orange;
+    background-color: purple;
 }
 /* .btn:hover{
     background-color: blue;
@@ -29,6 +36,6 @@ body{
     color: red;
 }
 
-/* button:nth-child(odd) {
-    background-color: purple;
-} */
+button:nth-child(odd) {
+    /* background-color: purple; */
+}

@@ -80,7 +80,13 @@ dotNumber.addEventListener("click", function(e) {
 // The equal button
 buttons.addEventListener("click", function(e) {
     let display = document.getElementById("equal").innerText;
-    screen.value += display;
+    // if(display == "=" && screen.value == ""){
+    //     screen.value = 0;
+    // }
+    // else{
+    //     screen.value += display;
+    // }
+    screen.value = eval(screen.value);
 });
 
 // The clear all button
@@ -91,20 +97,62 @@ clear.addEventListener("click", function(e) {
 
 plus.addEventListener("click", function(e) {
     let display = document.getElementById("plus").innerText;
-    screen.value += display;
+    
+    if(screen.value == ""){
+        screen.value += "";
+        alert("Enter a number first");
+    }
+    else{
+        screen.value += display;
+    }
+
 });
 // The subtract button
 minus.addEventListener("click", function(e) {
     let display = document.getElementById("minus").innerText;
     screen.value += display;
+    // if(screen.value == ""){
+    //     screen.value += "";
+    //     alert("Enter a number first");
+    // }
+    // else{
+    //     screen.value += display;
+    // }
 });
 // The multiply button
 multiply.addEventListener("click", function(e) {
     let display = document.getElementById("multiply").innerText;
-    screen.value += display;
+    if(screen.value == ""){
+        screen.value += "";
+        alert("Enter a number first");
+    }
+    else{
+        screen.value += display;
+    }
 });
 // The Division button
 division.addEventListener("click", function(e) {
     let display = document.getElementById("division").innerText;
-    screen.value += display;
+    if(screen.value == ""){
+        screen.value += "";
+        alert("Enter a number first");
+    }
+    else{
+        screen.value += display;
+    }
 });
+
+// function calculator(){
+//     if(display == "+"){
+//         screen.value = display + display;
+//     }
+//     else if(display == "-"){
+//         screen.value = display -display;
+//         let result = screen.value;
+
+//     }
+//     else if(display == "/") {
+//         screen.value = display;
+//     }
+    
+// }

@@ -32,10 +32,15 @@ button:hover{
 /* .btn:hover{
     background-color: blue;
 } */
-.cancel:hover{
-    color: red;
+
+#erase{
+    background-color: red;
 }
 
 button:nth-child(odd) {
     /* background-color: purple; */
+}
+
+#equal{
+    font-size: x-large;
 }

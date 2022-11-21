@@ -80,13 +80,13 @@ dotNumber.addEventListener("click", function(e) {
 // The equal button
 buttons.addEventListener("click", function(e) {
     let display = document.getElementById("equal").innerText;
-    // if(display == "=" && screen.value == ""){
-    //     screen.value = 0;
-    // }
-    // else{
-    //     screen.value += display;
-    // }
-    screen.value = eval(screen.value);
+    if(display == "=" && screen.value == ""){
+        screen.value = 0;
+    }
+    else{
+        // screen.value += display;
+        screen.value = eval(screen.value);
+    }
 });
 
 // The clear all button

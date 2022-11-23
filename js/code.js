@@ -141,18 +141,3 @@ division.addEventListener("click", function(e) {
         screen.value += display;
     }
 });
-
-// function calculator(){
-//     if(display == "+"){
-//         screen.value = display + display;
-//     }
-//     else if(display == "-"){
-//         screen.value = display -display;
-//         let result = screen.value;
-
-//     }
-//     else if(display == "/") {
-//         screen.value = display;
-//     }
-    
-// }

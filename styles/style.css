@@ -30,7 +30,7 @@ body{
 button{
     background-color: grey;
     color: white;
-    border-radius: ;
+    border-radius: 19px;
 }
 button:hover{
     background-color: aqua;

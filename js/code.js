@@ -70,9 +70,27 @@ zeroNumber.addEventListener("click", function(e) {
     screen.value += display;
 });
 // The Dot button
+let operators = document.querySelectorAll(".operators").innerText;
 dotNumber.addEventListener("click", function(e) {
     let display = document.getElementById("ndot").innerText;
-    screen.value += display;
+    // screen.value += display;
+    // if(screen.value == "" || screen.value == `${Number(screen.value)}`|| screen.value == `${Number(screen.value)} . + ${(operators)} ${Number(screen.value)}`) {
+    //     screen.value += display;
+    // }
+    // else if(screen.value == `${Number(screen.value)}` || screen.value == (operators)) {
+    //     screen.value += display;
+    // }
+
+    if(screen.value == "" || screen.value == Number(screen.value) || screen.value == (multiply.innerText) ) {
+        screen.value += display
+        console.log()
+    }
+    else if(screen.value == (multiply.innerText) && screen.value == Number(screen.value)){
+        screen.value += display
+    }
+    else if(screen.value == (multiply.innerText)){
+        screen.value += operators;
+    }
 });
 
 // THE OPERATORS BUTTONS
@@ -141,3 +159,7 @@ division.addEventListener("click", function(e) {
         screen.value += display;
     }
 });
+
+// function checkDecimal() {
+//     if(dispaly ==  "." || screen.value == "" || screen.value == (Numbers(screen.value))
+// }

@@ -16,6 +16,7 @@ let plus = document.getElementById("plus");
 let minus = document.getElementById("minus");
 let multiply = document.getElementById("multiply");
 let division = document.getElementById("division");
+let deletes = document.getElementById("delete");
 
 // THE NUMBER BUTTONS
 
@@ -70,27 +71,12 @@ zeroNumber.addEventListener("click", function(e) {
     screen.value += display;
 });
 // The Dot button
-let operators = document.querySelectorAll(".operators").innerText;
 dotNumber.addEventListener("click", function(e) {
     let display = document.getElementById("ndot").innerText;
-    // screen.value += display;
-    // if(screen.value == "" || screen.value == `${Number(screen.value)}`|| screen.value == `${Number(screen.value)} . + ${(operators)} ${Number(screen.value)}`) {
-    //     screen.value += display;
-    // }
-    // else if(screen.value == `${Number(screen.value)}` || screen.value == (operators)) {
-    //     screen.value += display;
-    // }
-
-    if(screen.value == "" || screen.value == Number(screen.value) || screen.value == (multiply.innerText) ) {
-        screen.value += display
-        console.log()
+    if(screen.value == "" || screen.value == Number(screen.value) || screen.value == "+" || screen.value == "-" || screen.value == "*"  || screen.value == "/") {
+        screen.value += display;
     }
-    else if(screen.value == (multiply.innerText) && screen.value == Number(screen.value)){
-        screen.value += display
-    }
-    else if(screen.value == (multiply.innerText)){
-        screen.value += operators;
-    }
+    
 });
 
 // THE OPERATORS BUTTONS
@@ -115,51 +101,31 @@ clear.addEventListener("click", function(e) {
 
 plus.addEventListener("click", function(e) {
     let display = document.getElementById("plus").innerText;
-    
-    if(screen.value == ""){
-        screen.value += "";
-        alert("Enter a number first");
-    }
-    else{
         screen.value += display;
-    }
+    
 
 });
 // The subtract button
 minus.addEventListener("click", function(e) {
     let display = document.getElementById("minus").innerText;
     screen.value += display;
-    // if(screen.value == ""){
-    //     screen.value += "";
-    //     alert("Enter a number first");
-    // }
-    // else{
-    //     screen.value += display;
-    // }
 });
 // The multiply button
 multiply.addEventListener("click", function(e) {
     let display = document.getElementById("multiply").innerText;
-    if(screen.value == ""){
-        screen.value += "";
-        alert("Enter a number first");
-    }
-    else{
-        screen.value += display;
-    }
+    screen.value += display;
+   
+    
+    
 });
 // The Division button
 division.addEventListener("click", function(e) {
     let display = document.getElementById("division").innerText;
-    if(screen.value == ""){
-        screen.value += "";
-        alert("Enter a number first");
-    }
-    else{
         screen.value += display;
-    }
+    
 });
 
-// function checkDecimal() {
-//     if(dispaly ==  "." || screen.value == "" || screen.value == (Numbers(screen.value))
-// }
+// The Delete button
+deletes.addEventListener("click", () => {
+    screen.value = screen.value.slice(0,-1)
+})

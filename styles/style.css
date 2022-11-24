@@ -23,7 +23,7 @@ body{
     margin-top: 6%;
     /* margin-top: 25px; */
     width: 250px;
-    height: 300px;
+    height: 400px;
 }
 
 /* #equal{
@@ -32,6 +32,7 @@ body{
 button{
     background-color: black;
     color: white;
+    /* border-radius: 100px; */
     /* border-radius: 19px; */
 }
 button:hover{

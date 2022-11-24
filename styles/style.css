@@ -7,7 +7,9 @@
 body{
     width: 100vw;
     /* height: 100vh; */
-    background-color: rgb(106, 106, 146);
+    /* background-color: rgb(106, 106, 146); */
+    /* background-color: black; */
+    background-color: olivedrab;
     text-align: center;
 }
 .container{
@@ -16,8 +18,8 @@ body{
     gap: 10px 5px;
     /* width: 400px;
     height:500px; */
-    border: 20px solid pink;
-    background-color: pink;
+    border: 20px solid yellow;
+    background-color: yellow;
     justify-content: center;
     margin: auto;
     margin-top: 6%;
@@ -25,14 +27,15 @@ body{
     width: 300px;
     height: 450px;
     border-radius: 12px;
+    box-shadow: 4px 4px 4px 4px green;
 }
 
 /* #equal{
     grid-column: 2/ -1;
 } */
 button{
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 100px;
     /* border-radius: 19px; */
 }
@@ -54,7 +57,11 @@ button:hover{
 } */
 
 #erase{
-    background-color: red;
+    background-color: orangered;
+}
+
+#delete{
+    background-color: orangered;
 }
 
 button:nth-child(odd) {
@@ -62,18 +69,19 @@ button:nth-child(odd) {
 }
 
 #equal{
-    font-size: x-large;
+    font-size: large;
 }
 .operators{
     /* font-size: 2rem; */
-    font-size: x-large;
-    /* background-color: blue; */
+    font-size: large;
+    background-color: blue;
+    /* background-color: gold; */
     border-radius: 12px;
 }
 .numbers{
     /* font-size: 2rem; */
-    font-size: x-large;
+    font-size: large;
 }
 #ndot{
-    font-size: 2rem;
+    font-size: large;
 }

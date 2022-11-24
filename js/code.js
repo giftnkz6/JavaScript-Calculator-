@@ -73,9 +73,12 @@ zeroNumber.addEventListener("click", function(e) {
 // The Dot button
 dotNumber.addEventListener("click", function(e) {
     let display = document.getElementById("ndot").innerText;
-    if(screen.value == "" || screen.value == Number(screen.value) || screen.value == "+" || screen.value == "-" || screen.value == "*"  || screen.value == "/") {
+    if(screen.value == "" || screen.value == Number(screen.value)) {
         screen.value += display;
     }
+    // else if(screen.value == "." && screen.value == Number(screen.value)) {
+    //     false
+    // }
     
 });
 

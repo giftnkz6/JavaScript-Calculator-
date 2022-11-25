@@ -76,10 +76,11 @@ dotNumber.addEventListener("click", function(e) {
     if(screen.value == "" || screen.value == Number(screen.value)) {
         screen.value += display;
     }
-    // else if(screen.value == "." && screen.value == Number(screen.value)) {
-    //     false
-    // }
+    if(screen.value !=="" && screen.value == NaN) {
+        screen.value = display;
+    }
     
+    // array.push(screen.value);
 });
 
 // THE OPERATORS BUTTONS

@@ -18,8 +18,8 @@ body{
     gap: 10px 5px;
     /* width: 400px;
     height:500px; */
-    border: 20px solid yellow;
-    background-color: yellow;
+    border: 20px solid gold;
+    background-color: gold;
     justify-content: center;
     margin: auto;
     margin-top: 6%;
@@ -40,12 +40,12 @@ button{
     /* border-radius: 19px; */
 }
 button:hover{
-    background-color: aqua;
-    color: black;
+    background-color: green;
+    color: white;
 }
 #screen{
     grid-column: 1 / -1;
-    background-color: aqua;
+    background-color: white;
     font-size: 2rem;
 }
 /* .operators{
@@ -56,13 +56,13 @@ button:hover{
     background-color: blue;
 } */
 
-#erase{
-    background-color: orangered;
+/* #erase{
+    background-color: olivedrab;
 }
 
 #delete{
-    background-color: orangered;
-}
+    background-color: olivedrab;
+} */
 
 button:nth-child(odd) {
     /* background-color: purple; */
@@ -74,7 +74,7 @@ button:nth-child(odd) {
 .operators{
     /* font-size: 2rem; */
     font-size: large;
-    background-color: blue;
+    background-color: olivedrab;
     /* background-color: gold; */
     border-radius: 12px;
 }

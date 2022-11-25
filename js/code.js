@@ -71,23 +71,28 @@ zeroNumber.addEventListener("click", function(e) {
     screen.value += display;
 });
 // The Dot button
-dotNumber.addEventListener("click", function(e) {
-    let display = document.getElementById("ndot").innerText;
+let allowed = true;
+dotNumber.addEventListener("click", (e) => {
+    if(allowed) {
+        let display = document.getElementById("ndot").innerText;
+        screen.value += display;
+        allowed = false;
+    }
+    
     // if(screen.value == "" ||
     // screen.value == Number(screen.value)) {
     //     screen.value += display;
     // }
-if(!screen.value.includes('.')) {
-        screen.value += display;
-    }
+// if(!screen.value.includes('.')) {
+//     screen.value += display;
+// }
     // else if(screen.value ==""){
     //     screen.value += display;    
     // }
 
-    // if(screen.value == "" || /\d{,}[+-/*]/.test(screen.value) || /[+-/*]\d/.test(screen.value)){
-    //     screen.value += display; 
-    // }
-    
+// if(screen.value == "" || /\d{,}[+-/*]/.test(screen.value) || /[+-/*]\d/.test(screen.value)){
+//         screen.value += display; 
+//     }
 
 
     
@@ -111,35 +116,42 @@ buttons.addEventListener("click", function(e) {
 clear.addEventListener("click", function(e) {
     let display = document.getElementById("erase");
     screen.value = "";
+    allowed = true;
 });
 
 plus.addEventListener("click", function(e) {
     let display = document.getElementById("plus").innerText;
-        screen.value += display;
-    
+    screen.value += display;
+    allowed = true;   
 
 });
 // The subtract button
 minus.addEventListener("click", function(e) {
     let display = document.getElementById("minus").innerText;
     screen.value += display;
+    allowed = true;
 });
 // The multiply button
 multiply.addEventListener("click", function(e) {
     let display = document.getElementById("multiply").innerText;
     screen.value += display;
-   
-    
-    
+    allowed = true;
 });
 // The Division button
 division.addEventListener("click", function(e) {
     let display = document.getElementById("division").innerText;
-        screen.value += display;
+    screen.value += display;
+    allowed = true;
     
 });
 
 // The Delete button
 deletes.addEventListener("click", () => {
-    screen.value = screen.value.slice(0,-1)
+    if(screen.value[screen.value.length -1] == "."){
+        screen.value = screen.value.slice(0,-1)
+        allowed = true;
+    }
+    else{
+        screen.value = screen.value.slice(0,-1)
+    }
 })

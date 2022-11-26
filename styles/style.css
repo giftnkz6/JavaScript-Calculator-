@@ -9,7 +9,7 @@ body{
     /* height: 100vh; */
     /* background-color: rgb(106, 106, 146); */
     /* background-color: black; */
-    /* background-color: olivedrab; */
+    background-color: olivedrab;
     text-align: center;
 }
 .container{
@@ -85,3 +85,9 @@ button:nth-child(odd) {
 #ndot{
     font-size: large;
 }
+
+/* @media screen and (min-width: 500px) {
+    button:hover{
+        background-color: aqua;
+    }
+} */

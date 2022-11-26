@@ -77,7 +77,7 @@ dotNumber.addEventListener("click", (e) => {
         let display = document.getElementById("ndot").innerText;
         screen.value += display;
         allowed = false;
-    }
+    } 
     
     // if(screen.value == "" ||
     // screen.value == Number(screen.value)) {
@@ -103,12 +103,12 @@ dotNumber.addEventListener("click", (e) => {
 // The equal button
 buttons.addEventListener("click", function(e) {
     let display = document.getElementById("equal").innerText;
-    if(display == "=" && screen.value == ""){
-        screen.value = 0;
+    screen.value = eval(screen.value);
+    if(screen.value.includes(".")) {
+        allowed = false;
     }
     else{
-        // screen.value += display;
-        screen.value = eval(screen.value);
+        allowed = true;
     }
 });
 

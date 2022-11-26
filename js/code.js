@@ -30,6 +30,7 @@ secondNumber.addEventListener("click", function(e) {
     let display = document.getElementById("n2").innerText;
     screen.value += display;
 });
+
 // The button 3
 thirdNumber.addEventListener("click", function(e) {
     let display = document.getElementById("n3").innerText;
